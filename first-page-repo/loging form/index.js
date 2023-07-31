@@ -8,9 +8,9 @@ document.getElementById('btn-submit').addEventListener('click', function(){
     passwordField.value = '';
 
     if(email=='habib@gmail.com' && password=='12345'){
-        console.log('valid User')
+        window.location = 'bank.html'
     }
     else{
-        console.log('invalid User')
+       alert('invalid User, enter your valid email and password')
     }
 })
