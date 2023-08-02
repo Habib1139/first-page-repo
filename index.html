@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event hander in comment box </title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Increse and Decrese shopping cart</title>
 </head>
 <body>
-    <div id="comment-text">
-        <h1>EvenHandler in Comment box</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ea, architecto nesciunt repellat dolorem tempore odio at nihil sint error ipsam beatae a inventore quas! Consequatur optio modi eveniet culpa.</p>
-        <p>Possimus omnis amet quasi, expedita dolores soluta saepe repellat incidunt. Veniam veritatis officiis molestiae a ipsam praesentium totam rem perspiciatis accusantium vel, et laudantium ad, nesciunt voluptate ut corrupti iusto!</p>
-        <p>Dolorum sed repellat voluptatibus eum quas dolores laboriosam quam esse eveniet cum dolorem architecto itaque amet eaque, quod, incidunt, est nihil obcaecati. Ratione earum quae quasi sint temporibus, perferendis optio!</p>
-    </div>
-    <div class="">
-        <textarea name="" id="comment-area" cols="60" rows="5"></textarea><br>
-        <button id="btn-post">Post</button>
-    </div>
+    <section>
+        <div class=" text-center mt-20">
+            <i id="btn-minus" class="fa-solid fa-minus mr-10"></i>
+            <input id="quantity-field" type="text" value="1" class="w-10 bg-green-400 text-center">
+            <i id="btn-plus" class="fa-solid fa-plus ml-10"></i>
+            <span class="ml-10">$<Span id="price-total">100</Span> </span>
+        </div>
+    </section>
 
-    <!-- script file -->
+    <!-- js -->
     <script src="index.js"></script>
 </body>
 </html>

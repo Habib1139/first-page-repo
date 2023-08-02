@@ -1,13 +1,22 @@
-document.getElementById('btn-post').addEventListener('click', function(){
+document.getElementById('btn-plus').addEventListener('click', function(){
+    const quantityField = document.getElementById('quantity-field');
+    const quantityFieldString = quantityField.value;
+    const quantityTotal = parseInt(quantityFieldString);
+    const quantityUpdate = quantityTotal + 1;
+    quantityField.value = quantityUpdate;
 
-    const commentBox = document.getElementById('comment-area')
-    const comment = commentBox.value;
+    const priceField= document.getElementById('price-total');
+    priceField.innerText = quantityUpdate * 100;
+})
 
-   const commentText= document.getElementById('comment-text')
-   const p =document.createElement('p')
-   p.innerText = comment;
-   commentText.appendChild(p)
+document.getElementById('btn-minus').addEventListener('click', function(){
+    const inputField = document.getElementById('quantity-field');
+    const inputFieldString = inputField.value;
+    const priviousQuantity = parseInt(inputFieldString);
 
-   commentBox.value = ('');
-   
+    const newQuantity = priviousQuantity - 1 ;
+    inputField.value = newQuantity;
+    
+    const priceField = document.getElementById('price-total');
+    priceField.innerText = newQuantity * 100;
 })
